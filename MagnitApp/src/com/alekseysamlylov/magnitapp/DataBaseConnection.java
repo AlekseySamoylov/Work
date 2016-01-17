@@ -101,8 +101,6 @@ public class DataBaseConnection {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
 
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputKeys.METHOD, "xml");
 
             DOMSource domSource = new DOMSource(document);
             StreamResult streamResult = new StreamResult(new File("1.xml"));
@@ -112,8 +110,6 @@ public class DataBaseConnection {
 
             Transformer transformer1 = transformerFactory.newTransformer(new StreamSource("1.xsl"));
 
-            transformer1.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer1.setOutputProperty(OutputKeys.METHOD, "xml");
 
             StreamSource xmlSourse = new StreamSource("1.xml");
             StreamResult out = new StreamResult("2.xml");
