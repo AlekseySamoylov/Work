@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MagnitApp">
+    <output-path>$PROJECT_DIR$/out/artifacts/MagnitApp</output-path>
+    <root id="archive" name="MagnitApp.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/ojdbc7.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/1.xsl" />
+    </root>
+  </artifact>
+</component>
