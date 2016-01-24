@@ -250,7 +250,7 @@ public class MainStageController implements Initializable {
                 "JOIN CLIENTS " +
                 "ON CLIENTSCARS.CLIENTID = CLIENTS.CLIENTID " +
                 "JOIN CARS " +
-                "ON CLIENTSCARS.CARID = CARS.CARID ORDER BY ORDERS.ORDERID";
+                "ON CLIENTSCARS.CARID = CARS.CARID ORDER BY ORDERS.ORDERID DESC";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()){
@@ -364,7 +364,7 @@ public class MainStageController implements Initializable {
                             "ON OPERATIONS.WORKID = WORK.WORKID " +
                             "JOIN MASTERS " +
                             "ON OPERATIONS.MASTERID = MASTERS.MASTERID " +
-                            "WHERE ORDERID = ?";
+                            "WHERE ORDERID = ? ORDER BY OPERATIONS.OPERATIONID";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, tableView.getSelectionModel().getSelectedItem().getOrderId());
             ResultSet resultSet = preparedStatement.executeQuery();

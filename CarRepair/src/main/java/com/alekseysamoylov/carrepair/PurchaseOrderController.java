@@ -35,9 +35,8 @@ public class PurchaseOrderController implements Initializable {
     @FXML private TextArea workField;
     @FXML private TextField summaField;
     @FXML private Label nameWork;
-    @FXML private Button saveOperationButton;
+    @FXML private Button addWorkButton;
     @FXML private Button saveOrderButton;
-
 
 
     @FXML private TableView<OperationsTableClass> tableView;
@@ -49,28 +48,44 @@ public class PurchaseOrderController implements Initializable {
     @FXML private TableColumn<OperationsTableClass, Float> summ;
     private ObservableList<OperationsTableClass> data;
 
-    @FXML private ComboBox<Integer> value;
-    private ObservableList<Integer> valuesList = FXCollections.observableArrayList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,50,100);
-
     @FXML private ComboBox<String> masterBox;
+    private ObservableList<String> masterList = FXCollections.observableArrayList();
 
     @FXML private ComboBox<String> operationsNames;
     private ObservableList<String> operationValues = FXCollections.observableArrayList("Диагностика","Слесарные работы","Сварочные работы","Автоэлектрика","Кузовные работы","Шиномонтаж","Комплексные работы","Прочее");
-
-    private ObservableList<String> masterList = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         operationsNames.setValue("Слесарные работы");
         operationsNames.setItems(operationValues);
-        value.setItems(valuesList);
-        value.setValue(1);
+        masterBox.setValue(StaticValues.getMaster());
         try {
+            updateBoxes();
             refreshTable();
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         checkSaveButton();
+
+    }
+
+    @FXML
+    private void clickMasterBox() {
+        try {
+            Connection connection = DataBaseConnection.connectionOpen();
+            String sql = "SELECT masterId FROM masters WHERE name = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, masterBox.getValue());
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                StaticValues.setMasterId(resultSet.getInt(1));
+            }
+            StaticValues.setMaster(masterBox.getValue());
+            checkSaveButton();
+        }catch ( SQLException | ClassNotFoundException ex){
+            ex.printStackTrace();
+            label.setText("Wrong!!!");        }
+
 
     }
 
@@ -138,27 +153,7 @@ public class PurchaseOrderController implements Initializable {
             label.setText("Wrong!!!");    }
     }
 
-    @FXML
-    private void clickSaveOperation() {
-        try{
-        Connection connection = DataBaseConnection.connectionOpen();
-        String sql = "INSERT INTO OPERATIONS (ORDERID, MASTERID, WORKID, PRICE, NUMBERWORK, SUMM) VALUES (?, ?, ?, ?, ?, ?)";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        System.out.println(StaticValues.getOrderId());
-        preparedStatement.setInt(1, StaticValues.getOrderId());
-        preparedStatement.setInt(2, StaticValues.getMasterId());
-        preparedStatement.setInt(3, StaticValues.getWorkId());
-        preparedStatement.setFloat(4, Float.parseFloat(priceManual.getText()));
-        preparedStatement.setInt(5, value.getValue());
-        preparedStatement.setFloat(6, (Float.parseFloat(priceManual.getText())*value.getValue()));
-        preparedStatement.executeUpdate();
-        refreshTable();
-            checkSaveButton();
-        }catch ( SQLException | ClassNotFoundException ex){
-            ex.printStackTrace();
-            label.setText("Wrong!!!");    }
 
-    }
     @FXML
     private void clickSaveOrder(){
         new Thread(new Runnable() {
@@ -199,34 +194,10 @@ public class PurchaseOrderController implements Initializable {
 
     }
 
-    @FXML
-    private void clickMasterBox() {
-        try {
-            Connection connection = DataBaseConnection.connectionOpen();
-            String sql = "SELECT masterId FROM masters WHERE name = ?";
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1, masterBox.getValue());
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                StaticValues.setMasterId(resultSet.getInt(1));
-            }
-            StaticValues.setMaster(masterBox.getValue());
-            checkSaveButton();
-        }catch ( SQLException | ClassNotFoundException ex){
-            ex.printStackTrace();
-            label.setText("Wrong!!!");        }
-
-
-    }
-
 
 
     private void refreshTable() throws SQLException, ClassNotFoundException {
         StaticValues.setSummaField(0);
-
-        masterBox.setValue(StaticValues.getMaster());
-        workField.setText(StaticValues.getWorkName());
-        priceManual.setText(String.valueOf(StaticValues.getPrice()));
         data = FXCollections.observableArrayList();
         operationId.setCellValueFactory(new PropertyValueFactory<>("operationId"));
         operationName.setCellValueFactory(new PropertyValueFactory<>("operationName"));
@@ -243,7 +214,7 @@ public class PurchaseOrderController implements Initializable {
                         "ON OPERATIONS.WORKID = WORK.WORKID " +
                         "JOIN MASTERS " +
                         "ON OPERATIONS.MASTERID = MASTERS.MASTERID" +
-                        " WHERE ORDERID = ?";
+                        " WHERE ORDERID = ? ORDER BY OPERATIONS.OPERATIONID";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         preparedStatement.setInt(1, StaticValues.getOrderId());
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -261,9 +232,36 @@ public class PurchaseOrderController implements Initializable {
         }
         summaField.setText(String.valueOf(StaticValues.getSummaField()));
         tableView.setItems(data);
-        updateBoxes();
         clientCarFields();
 
+    }
+
+
+    private void clientCarFields() throws SQLException, ClassNotFoundException {
+        Connection connection = DataBaseConnection.connectionOpen();
+        String sql = "SELECT clients.firstName, clients.secondName, cars.mark, cars.model FROM clientscars JOIN clients ON clientscars.clientid = clients.clientid JOIN cars ON clientsCars.carId = cars.carid WHERE clientCarId = ? ";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setInt(1, StaticValues.getClientCarId());
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()){
+            clientField.setText(resultSet.getString(1) + " " + resultSet.getString(2));
+            carField.setText(resultSet.getString(3) + " " + resultSet.getString(4));
+        }
+    }
+    private void checkSaveButton(){
+        try {
+            if(!StaticValues.getMaster().equals("Выберите мастера")){
+                addWorkButton.setDisable(false);
+            }
+            if (StaticValues.getOrderId() > 0 && StaticValues.getClientCarId() > 0 && StaticValues.getWorkId() > 0 && StaticValues.getMasterId() > 0 && (!tableView.getItems().isEmpty())) {
+                saveOrderButton.setDisable(false);
+            }
+
+
+        }catch (Exception ex){
+            ex.printStackTrace();
+            label.setText("Wrong!!!");
+        }
     }
 
     private void updateBoxes() throws SQLException, ClassNotFoundException {
@@ -278,32 +276,6 @@ public class PurchaseOrderController implements Initializable {
         }
         masterBox.setItems(masterList);
 
-}
-    private void clientCarFields() throws SQLException, ClassNotFoundException {
-        Connection connection = DataBaseConnection.connectionOpen();
-        String sql = "SELECT clients.firstName, clients.secondName, cars.mark, cars.model FROM clientscars JOIN clients ON clientscars.clientid = clients.clientid JOIN cars ON clientsCars.carId = cars.carid WHERE clientCarId = ? ";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        preparedStatement.setInt(1, StaticValues.getClientCarId());
-        ResultSet resultSet = preparedStatement.executeQuery();
-        while (resultSet.next()){
-            clientField.setText(resultSet.getString(1) + " " + resultSet.getString(2));
-            carField.setText(resultSet.getString(3) + " " + resultSet.getString(4));
-        }
-    }
-    private void checkSaveButton(){
-        try {
-            if (StaticValues.getOrderId() > 0 && StaticValues.getClientCarId() > 0 && StaticValues.getWorkId() > 0 && StaticValues.getMasterId() > 0 && Float.parseFloat(priceManual.getText()) >= 0) {
-                saveOperationButton.setDisable(false);
-
-            }
-            if (!tableView.getItems().isEmpty()) {
-                saveOrderButton.setDisable(false);
-            }
-
-        }catch (Exception ex){
-            ex.printStackTrace();
-            label.setText("Wrong!!!");
-        }
     }
     private void clearStatics(){
         StaticValues.setOrderId(0);

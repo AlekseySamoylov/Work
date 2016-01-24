@@ -8,7 +8,7 @@ public class StaticValues {
     private static String model = "";
     private static String mark = "";
     private static Boolean willDelete;
-    private static String master = "Мастер";
+    private static String master = "Выберите мастера";
     private static String login;
     private static String password;
     public static String name;
@@ -20,11 +20,10 @@ public class StaticValues {
     private static int workId;
     private static int masterId;
     private static int managerId;
-    // !!!!!!!!!!!!!!!!//
     private static int orderId;
     private static int operationId;
-    //!!!!!!!!!!!!!!!!!//
     private static float price;
+
     private static String workName = "";
 
     private static String manager = "Менеджер";
@@ -68,8 +67,6 @@ public class StaticValues {
     public static void setMark(String mark) {
         StaticValues.mark = mark;
     }
-
-
 
     public static int getManagerId() {
         return managerId;
@@ -127,11 +124,6 @@ public class StaticValues {
         StaticValues.dateOrder = dateOrder;
     }
 
-
-
-
-
-
     public static int getClientCarId() {
         return clientCarId;
     }
@@ -164,7 +156,6 @@ public class StaticValues {
         StaticValues.orderId = orderId;
     }
 
-
     public static int getClientId() {return clientId;    }
 
     public static void setClientId(int clientUpdateId) {  StaticValues.clientId = clientUpdateId;  }
@@ -183,6 +174,13 @@ public class StaticValues {
 
     public static void setPassword(String password) {
         StaticValues.password = password;
+    }
+
+    public void clearStaticsWork(){
+            StaticValues.setWorkId(0);
+            StaticValues.setMaster("Выберите мастера");
+            StaticValues.setMasterId(0);
+            StaticValues.setPrice(0);
     }
 
 }

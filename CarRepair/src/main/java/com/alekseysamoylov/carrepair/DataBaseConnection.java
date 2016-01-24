@@ -8,11 +8,11 @@ import java.sql.*;
 
 public class DataBaseConnection {
     private static final String CLASSNAME = "oracle.jdbc.driver.OracleDriver";
-    private static String connectionPath = "jdbc:oracle:thin:@localhost:1521:xe";
+    private static String connectionPath = "jdbc:oracle:thin:@172.20.10.7:1521:xe";
 
 
     /*
-    private static String connectionPath = "jdbc:oracle:thin:@172.20.10.7:1521:xe";
+    private static String connectionPath = "jdbc:oracle:thin:@localhost:1521:xe";
 
         "jdbc:oracle:thin:@172.20.10.7:1521:xe";
         */

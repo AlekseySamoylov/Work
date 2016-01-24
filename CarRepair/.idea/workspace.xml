@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7866023-e394-454d-ae48-4ca2bda0d34c" name="Default" comment="" />
+    <list default="true" id="e7866023-e394-454d-ae48-4ca2bda0d34c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/DataBaseConnection.java" afterPath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/DataBaseConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MainStageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MainStageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/PurchaseOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/PurchaseOrderController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/StaticValues.java" afterPath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/StaticValues.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WorksListController.java" afterPath="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WorksListController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/clientsCars2.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/clientsCars2.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/worksList.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/worksList.fxml" />
+    </list>
     <ignored path="CarRepair1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,109 +35,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainStageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MainStageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="203" column="54" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#4598#4599#0" expanded="false" />
-                <element signature="e#4622#4623#0" expanded="false" />
-                <marker date="1453621263000" expanded="true" signature="3133:3169" placeholder="DELETE FROM " />
-                <marker date="1453621263000" expanded="true" signature="3982:4035" placeholder="INSERT INTO ORDERS... " />
-                <marker date="1453621263000" expanded="true" signature="4770:4818" placeholder="UPDATE ORDER... " />
-                <marker date="1453621263000" expanded="true" signature="5533:5578" placeholder="SELECT manag... managers" />
-                <marker date="1453621263000" expanded="true" signature="8002:8028" placeholder="SELECT ORDER... ORDERS" />
-                <marker date="1453621263000" expanded="true" signature="8351:9056" placeholder="SELECT ORDER... ORDERS" />
-                <marker date="1453621263000" expanded="true" signature="10255:10280" placeholder="SELECT name managers" />
-                <marker date="1453621263000" expanded="true" signature="11848:11907" placeholder="SELECT CLIEN... ORDERS" />
-                <marker date="1453621263000" expanded="true" signature="14542:14999" placeholder="SELECT WORK.... OPERATIONS" />
-                <marker date="1453621263000" expanded="true" signature="16108:16453" placeholder="SELECT CLIEN... ORDERS" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StaticValues.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/StaticValues.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="42" />
-              <folding>
-                <element signature="e#941#942#0" expanded="false" />
-                <element signature="e#970#971#0" expanded="false" />
-                <element signature="e#1021#1022#0" expanded="false" />
-                <element signature="e#1065#1066#0" expanded="false" />
-                <element signature="e#1106#1107#0" expanded="false" />
-                <element signature="e#1136#1137#0" expanded="false" />
-                <element signature="e#1189#1190#0" expanded="false" />
-                <element signature="e#1235#1236#0" expanded="false" />
-                <element signature="e#1280#1281#0" expanded="false" />
-                <element signature="e#1313#1314#0" expanded="false" />
-                <element signature="e#1373#1374#0" expanded="false" />
-                <element signature="e#1425#1426#0" expanded="false" />
-                <element signature="e#1464#1465#0" expanded="false" />
-                <element signature="e#1492#1493#0" expanded="false" />
-                <element signature="e#1541#1542#0" expanded="false" />
-                <element signature="e#1583#1584#0" expanded="false" />
-                <element signature="e#1621#1622#0" expanded="false" />
-                <element signature="e#1648#1649#0" expanded="false" />
-                <element signature="e#1695#1696#0" expanded="false" />
-                <element signature="e#1735#1736#0" expanded="false" />
-                <element signature="e#1777#1778#0" expanded="false" />
-                <element signature="e#1809#1810#0" expanded="false" />
-                <element signature="e#1863#1864#0" expanded="false" />
-                <element signature="e#1913#1914#0" expanded="false" />
-                <element signature="e#1952#1953#0" expanded="false" />
-                <element signature="e#1983#1984#0" expanded="false" />
-                <element signature="e#2035#2036#0" expanded="false" />
-                <element signature="e#2083#2084#0" expanded="false" />
-                <element signature="e#2120#2121#0" expanded="false" />
-                <element signature="e#2149#2150#0" expanded="false" />
-                <element signature="e#2197#2198#0" expanded="false" />
-                <element signature="e#2241#2242#0" expanded="false" />
-                <element signature="e#2283#2284#0" expanded="false" />
-                <element signature="e#2314#2315#0" expanded="false" />
-                <element signature="e#2369#2370#0" expanded="false" />
-                <element signature="e#2417#2418#0" expanded="false" />
-                <element signature="e#2460#2461#0" expanded="false" />
-                <element signature="e#2493#2494#0" expanded="false" />
-                <element signature="e#2551#2552#0" expanded="false" />
-                <element signature="e#2603#2604#0" expanded="false" />
-                <element signature="e#2647#2648#0" expanded="false" />
-                <element signature="e#2680#2681#0" expanded="false" />
-                <element signature="e#2739#2740#0" expanded="false" />
-                <element signature="e#2791#2792#0" expanded="false" />
-                <element signature="e#2834#2835#0" expanded="false" />
-                <element signature="e#2866#2867#0" expanded="false" />
-                <element signature="e#2923#2924#0" expanded="false" />
-                <element signature="e#2973#2974#0" expanded="false" />
-                <element signature="e#3020#3021#0" expanded="false" />
-                <element signature="e#3054#3055#0" expanded="false" />
-                <element signature="e#3112#3113#0" expanded="false" />
-                <element signature="e#3166#3167#0" expanded="false" />
-                <element signature="e#3208#3209#0" expanded="false" />
-                <element signature="e#3242#3243#0" expanded="false" />
-                <element signature="e#3300#3301#0" expanded="false" />
-                <element signature="e#3354#3355#0" expanded="false" />
-                <element signature="e#3392#3393#0" expanded="false" />
-                <element signature="e#3420#3421#0" expanded="false" />
-                <element signature="e#3468#3469#0" expanded="false" />
-                <element signature="e#3510#3511#0" expanded="false" />
-                <element signature="e#3548#3549#0" expanded="false" />
-                <element signature="e#3578#3579#0" expanded="false" />
-                <element signature="e#3628#3629#0" expanded="false" />
-                <element signature="e#3674#3675#0" expanded="false" />
-                <element signature="e#3876#3877#0" expanded="false" />
-                <element signature="e#3904#3905#0" expanded="false" />
-                <element signature="e#3953#3954#0" expanded="false" />
-                <element signature="e#3995#3996#0" expanded="false" />
-                <element signature="e#4037#4038#0" expanded="false" />
-                <element signature="e#4068#4069#0" expanded="false" />
-                <element signature="e#4123#4124#0" expanded="false" />
-                <element signature="e#4171#4172#0" expanded="false" />
-              </folding>
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,8 +49,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/ClientCarsController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="18" />
+              <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <marker date="1453620260000" expanded="true" signature="1821:1872" placeholder="SELECT carId... cars" />
                 <marker date="1453620260000" expanded="true" signature="2289:2358" placeholder="INSERT INTO clientscars... " />
                 <marker date="1453620260000" expanded="true" signature="2658:2693" placeholder="SELECT clien... clientsCars" />
@@ -161,54 +76,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CarsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/CarsController.java">
+      <file leaf-file-name="purchaseOrder.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2986#2987#0" expanded="false" />
-                <element signature="e#3022#3023#0" expanded="false" />
-                <marker date="1453621404000" expanded="true" signature="1581:1625" placeholder="INSERT INTO cars... " />
-                <marker date="1453621404000" expanded="true" signature="2499:2551" placeholder="SELECT model... cars" />
-                <marker date="1453621404000" expanded="true" signature="3526:3575" placeholder="SELECT mark cars" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailSendFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MailSendFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state vertical-scroll-proportion="-7.075472">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBaseConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/DataBaseConnection.java">
+      <file leaf-file-name="clientAdd2.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientAdd2.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <marker date="1453622657000" expanded="true" signature="1649:1674" placeholder="SELECT login... account" />
-              </folding>
+            <state vertical-scroll-proportion="-2.2641509">
+              <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientCars.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientCars.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.226415">
+              <caret line="7" column="201" selection-start-line="7" selection-start-column="201" selection-end-line="7" selection-end-column="201" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clients.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clients.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.6981132">
+              <caret line="6" column="201" selection-start-line="6" selection-start-column="201" selection-end-line="6" selection-end-column="201" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientsCars2.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientsCars2.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6795302">
+              <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="worksList.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/worksList.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.320755">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -216,52 +158,48 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WorksListController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="349" column="32" selection-start-line="349" selection-start-column="32" selection-end-line="349" selection-end-column="32" />
+              <caret line="361" column="99" selection-start-line="361" selection-start-column="99" selection-end-line="361" selection-end-column="99" />
               <folding>
-                <marker date="1453616634000" expanded="true" signature="3426:3477" placeholder="SELECT carId... cars" />
-                <marker date="1453616634000" expanded="true" signature="3926:3984" placeholder="INSERT INTO work... " />
-                <marker date="1453616634000" expanded="true" signature="4756:4800" placeholder="INSERT INTO cars... " />
-                <marker date="1453616634000" expanded="true" signature="5140:5191" placeholder="SELECT carId... cars" />
-                <marker date="1453616634000" expanded="true" signature="5753:5811" placeholder="INSERT INTO work... " />
-                <marker date="1453616634000" expanded="true" signature="6639:6690" placeholder="SELECT carId... cars" />
-                <marker date="1453616634000" expanded="true" signature="7139:7197" placeholder="INSERT INTO work... " />
-                <marker date="1453616634000" expanded="true" signature="7696:7752" placeholder="SELECT workI... work" />
-                <marker date="1453616634000" expanded="true" signature="8593:8637" placeholder="INSERT INTO cars... " />
-                <marker date="1453616634000" expanded="true" signature="8997:9048" placeholder="SELECT carId... cars" />
-                <marker date="1453616634000" expanded="true" signature="9646:9704" placeholder="INSERT INTO work... " />
-                <marker date="1453616634000" expanded="true" signature="10234:10264" placeholder="SELECT workI... work" />
-                <marker date="1453616634000" expanded="true" signature="11419:11456" placeholder="SELECT model... cars" />
-                <marker date="1453616634000" expanded="true" signature="12433:12466" placeholder="DELETE FROM " />
-                <marker date="1453616634000" expanded="true" signature="13457:13593" placeholder="SELECT work.... work" />
-                <marker date="1453616634000" expanded="true" signature="14245:14294" placeholder="SELECT mark cars" />
+                <marker date="1453644441180" expanded="true" signature="3903:3954" placeholder="SELECT carId... cars" />
+                <marker date="1453644441180" expanded="true" signature="4403:4461" placeholder="INSERT INTO work... " />
+                <marker date="1453644441180" expanded="true" signature="5233:5277" placeholder="INSERT INTO cars... " />
+                <marker date="1453644441180" expanded="true" signature="5617:5668" placeholder="SELECT carId... cars" />
+                <marker date="1453644441180" expanded="true" signature="6230:6288" placeholder="INSERT INTO work... " />
+                <marker date="1453644441180" expanded="true" signature="7116:7167" placeholder="SELECT carId... cars" />
+                <marker date="1453644441180" expanded="true" signature="7616:7674" placeholder="INSERT INTO work... " />
+                <marker date="1453644441180" expanded="true" signature="8173:8229" placeholder="SELECT workI... work" />
+                <marker date="1453644441180" expanded="true" signature="9109:9153" placeholder="INSERT INTO cars... " />
+                <marker date="1453644441180" expanded="true" signature="9513:9564" placeholder="SELECT carId... cars" />
+                <marker date="1453644441180" expanded="true" signature="10162:10220" placeholder="INSERT INTO work... " />
+                <marker date="1453644441180" expanded="true" signature="10750:10780" placeholder="SELECT workI... work" />
+                <marker date="1453644441180" expanded="true" signature="12400:12437" placeholder="SELECT model... cars" />
+                <marker date="1453644441180" expanded="true" signature="13414:13447" placeholder="DELETE FROM " />
+                <marker date="1453644441180" expanded="true" signature="14438:14574" placeholder="SELECT work.... work" />
+                <marker date="1453644441180" expanded="true" signature="15226:15275" placeholder="SELECT mark cars" />
+                <marker date="1453644441180" expanded="true" signature="15754:15855" placeholder="INSERT INTO OPERATIONS... " />
+                <marker date="1453644441180" expanded="true" signature="16858:16959" placeholder="INSERT INTO OPERATIONS... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WelcomeController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WelcomeController.java">
+      <file leaf-file-name="works.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/works.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41558442">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.28301886">
+              <caret line="6" column="202" selection-start-line="6" selection-start-column="202" selection-end-line="6" selection-end-column="202" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewStage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/NewStage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -288,29 +226,29 @@
         <option value="$PROJECT_DIR$/src/main/resources/fxml/clientCars.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/clientInOrder.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/clients.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/clientsCars2.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/clientUpdate.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/clientUpdate2.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/mainStage.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/printer.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/sql.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/works.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/worksList.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WelcomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/ClientAddController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/ClientInOrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/ClientUpdateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/printerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/sqlController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WorksListController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/PurchaseOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/ClientCarsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/StaticValues.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MainStageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/CarsController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/DataBaseConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MainStageController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/worksList.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/StaticValues.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/PurchaseOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WorksListController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/clientsCars2.fxml" />
       </list>
     </option>
   </component>
@@ -322,7 +260,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="/Volumes/ssd128/Applications/apache-maven-3.3.9" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../ssd128/Applications/apache-maven-3.3.9" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -333,40 +271,21 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="carrepair1" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="carrepair1" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
       </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="height" value="1080" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -384,7 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -417,8 +336,70 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRepair1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRepair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRepair1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRepair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRepair1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRepair" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fxml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -451,7 +432,7 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,6 +442,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -969,27 +951,29 @@
       <updated>1453614501753</updated>
       <workItem from="1453614503218" duration="7299000" />
       <workItem from="1453622603660" duration="410000" />
+      <workItem from="1453637419822" duration="6975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7709000" />
+    <option name="totallyTimeSpent" value="14684000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33280087" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13631523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15495208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -997,7 +981,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1009,7 +992,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1021,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,6 +1014,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="18" />
           <folding>
+            <element signature="imports" expanded="true" />
             <marker date="1453620260000" expanded="true" signature="1821:1872" placeholder="SELECT carId... cars" />
             <marker date="1453620260000" expanded="true" signature="2289:2358" placeholder="INSERT INTO clientscars... " />
             <marker date="1453620260000" expanded="true" signature="2658:2693" placeholder="SELECT clien... clientsCars" />
@@ -1058,9 +1043,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2986#2987#0" expanded="false" />
-            <element signature="e#3022#3023#0" expanded="false" />
             <marker date="1453621404000" expanded="true" signature="1581:1625" placeholder="INSERT INTO cars... " />
             <marker date="1453621404000" expanded="true" signature="2499:2551" placeholder="SELECT model... cars" />
             <marker date="1453621404000" expanded="true" signature="3526:3575" placeholder="SELECT mark cars" />
@@ -1087,23 +1069,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/NewStage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,145 +1111,83 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/cars.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4150944">
           <caret line="5" column="201" selection-start-line="5" selection-start-column="192" selection-end-line="5" selection-end-column="201" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientAdd.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2641509">
           <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientAdd2.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2641509">
-          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientCars.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.981132">
-          <caret line="7" column="201" selection-start-line="7" selection-start-column="201" selection-end-line="7" selection-end-column="201" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientInOrder.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4150944">
           <caret line="5" column="201" selection-start-line="5" selection-start-column="201" selection-end-line="5" selection-end-column="201" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clients.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6981132">
-          <caret line="6" column="201" selection-start-line="6" selection-start-column="201" selection-end-line="6" selection-end-column="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientsCars2.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.981132">
-          <caret line="7" column="201" selection-start-line="7" selection-start-column="201" selection-end-line="7" selection-end-column="201" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientUpdate.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.981132">
           <caret line="7" column="201" selection-start-line="7" selection-start-column="201" selection-end-line="7" selection-end-column="201" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientUpdate2.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.981132">
           <caret line="7" column="201" selection-start-line="7" selection-start-column="201" selection-end-line="7" selection-end-column="201" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/printer.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/printer.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4150944">
           <caret line="5" column="201" selection-start-line="5" selection-start-column="201" selection-end-line="5" selection-end-column="201" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/sql.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/sql.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6981132">
           <caret line="6" column="201" selection-start-line="6" selection-start-column="201" selection-end-line="6" selection-end-column="201" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/welcome.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6981132">
           <caret line="6" column="202" selection-start-line="6" selection-start-column="202" selection-end-line="6" selection-end-column="202" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/works.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6981132">
-          <caret line="6" column="202" selection-start-line="6" selection-start-column="202" selection-end-line="6" selection-end-column="202" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/worksList.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6981132">
-          <caret line="6" column="202" selection-start-line="6" selection-start-column="202" selection-end-line="6" selection-end-column="202" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/ClientUpdateController.java">
@@ -1330,13 +1248,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainStage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6981132">
           <caret line="6" column="202" selection-start-line="6" selection-start-column="202" selection-end-line="6" selection-end-column="202" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
@@ -1378,39 +1296,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/PurchaseOrderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MailSendFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="57" selection-start-line="274" selection-start-column="57" selection-end-line="274" selection-end-column="57" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#3837#3838#0" expanded="false" />
-            <element signature="e#3870#3871#0" expanded="false" />
-            <marker date="1453619604000" expanded="true" signature="3242:3286" placeholder="DELETE FROM " />
-            <marker date="1453619604000" expanded="true" signature="4371:4407" placeholder="DELETE FROM " />
-            <marker date="1453619604000" expanded="true" signature="5028:5129" placeholder="INSERT INTO OPERATIONS... " />
-            <marker date="1453619604000" expanded="true" signature="6208:6332" placeholder="UPDATE ORDER... " />
-            <marker date="1453619604000" expanded="true" signature="7860:7903" placeholder="SELECT maste... masters" />
-            <marker date="1453619604000" expanded="true" signature="9410:9855" placeholder="SELECT OPERA... OPERATIONS" />
-            <marker date="1453619604000" expanded="true" signature="11161:11185" placeholder="SELECT name masters" />
-            <marker date="1453619604000" expanded="true" signature="11161:11199" placeholder="SELECT name masters" />
-            <marker date="1453619604000" expanded="true" signature="11721:11927" placeholder="SELECT clien... clientscars" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WelcomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/CarsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1453621404000" expanded="true" signature="1581:1625" placeholder="INSERT INTO cars... " />
+            <marker date="1453621404000" expanded="true" signature="2499:2551" placeholder="SELECT model... cars" />
+            <marker date="1453621404000" expanded="true" signature="3526:3575" placeholder="SELECT mark cars" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/DataBaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1453640080710" expanded="true" signature="1649:1674" placeholder="SELECT login... account" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1418,17 +1351,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/ClientCarsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="18" />
+          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <marker date="1453620260000" expanded="true" signature="1821:1872" placeholder="SELECT carId... cars" />
             <marker date="1453620260000" expanded="true" signature="2289:2358" placeholder="INSERT INTO clientscars... " />
             <marker date="1453620260000" expanded="true" signature="2658:2693" placeholder="SELECT clien... clientsCars" />
@@ -1452,183 +1384,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/StaticValues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="e#941#942#0" expanded="false" />
-            <element signature="e#970#971#0" expanded="false" />
-            <element signature="e#1021#1022#0" expanded="false" />
-            <element signature="e#1065#1066#0" expanded="false" />
-            <element signature="e#1106#1107#0" expanded="false" />
-            <element signature="e#1136#1137#0" expanded="false" />
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1235#1236#0" expanded="false" />
-            <element signature="e#1280#1281#0" expanded="false" />
-            <element signature="e#1313#1314#0" expanded="false" />
-            <element signature="e#1373#1374#0" expanded="false" />
-            <element signature="e#1425#1426#0" expanded="false" />
-            <element signature="e#1464#1465#0" expanded="false" />
-            <element signature="e#1492#1493#0" expanded="false" />
-            <element signature="e#1541#1542#0" expanded="false" />
-            <element signature="e#1583#1584#0" expanded="false" />
-            <element signature="e#1621#1622#0" expanded="false" />
-            <element signature="e#1648#1649#0" expanded="false" />
-            <element signature="e#1695#1696#0" expanded="false" />
-            <element signature="e#1735#1736#0" expanded="false" />
-            <element signature="e#1777#1778#0" expanded="false" />
-            <element signature="e#1809#1810#0" expanded="false" />
-            <element signature="e#1863#1864#0" expanded="false" />
-            <element signature="e#1913#1914#0" expanded="false" />
-            <element signature="e#1952#1953#0" expanded="false" />
-            <element signature="e#1983#1984#0" expanded="false" />
-            <element signature="e#2035#2036#0" expanded="false" />
-            <element signature="e#2083#2084#0" expanded="false" />
-            <element signature="e#2120#2121#0" expanded="false" />
-            <element signature="e#2149#2150#0" expanded="false" />
-            <element signature="e#2197#2198#0" expanded="false" />
-            <element signature="e#2241#2242#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="e#2314#2315#0" expanded="false" />
-            <element signature="e#2369#2370#0" expanded="false" />
-            <element signature="e#2417#2418#0" expanded="false" />
-            <element signature="e#2460#2461#0" expanded="false" />
-            <element signature="e#2493#2494#0" expanded="false" />
-            <element signature="e#2551#2552#0" expanded="false" />
-            <element signature="e#2603#2604#0" expanded="false" />
-            <element signature="e#2647#2648#0" expanded="false" />
-            <element signature="e#2680#2681#0" expanded="false" />
-            <element signature="e#2739#2740#0" expanded="false" />
-            <element signature="e#2791#2792#0" expanded="false" />
-            <element signature="e#2834#2835#0" expanded="false" />
-            <element signature="e#2866#2867#0" expanded="false" />
-            <element signature="e#2923#2924#0" expanded="false" />
-            <element signature="e#2973#2974#0" expanded="false" />
-            <element signature="e#3020#3021#0" expanded="false" />
-            <element signature="e#3054#3055#0" expanded="false" />
-            <element signature="e#3112#3113#0" expanded="false" />
-            <element signature="e#3166#3167#0" expanded="false" />
-            <element signature="e#3208#3209#0" expanded="false" />
-            <element signature="e#3242#3243#0" expanded="false" />
-            <element signature="e#3300#3301#0" expanded="false" />
-            <element signature="e#3354#3355#0" expanded="false" />
-            <element signature="e#3392#3393#0" expanded="false" />
-            <element signature="e#3420#3421#0" expanded="false" />
-            <element signature="e#3468#3469#0" expanded="false" />
-            <element signature="e#3510#3511#0" expanded="false" />
-            <element signature="e#3548#3549#0" expanded="false" />
-            <element signature="e#3578#3579#0" expanded="false" />
-            <element signature="e#3628#3629#0" expanded="false" />
-            <element signature="e#3674#3675#0" expanded="false" />
-            <element signature="e#3876#3877#0" expanded="false" />
-            <element signature="e#3904#3905#0" expanded="false" />
-            <element signature="e#3953#3954#0" expanded="false" />
-            <element signature="e#3995#3996#0" expanded="false" />
-            <element signature="e#4037#4038#0" expanded="false" />
-            <element signature="e#4068#4069#0" expanded="false" />
-            <element signature="e#4123#4124#0" expanded="false" />
-            <element signature="e#4171#4172#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MainStageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="203" column="54" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="54" />
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4598#4599#0" expanded="false" />
-            <element signature="e#4622#4623#0" expanded="false" />
-            <marker date="1453621263000" expanded="true" signature="3133:3169" placeholder="DELETE FROM " />
-            <marker date="1453621263000" expanded="true" signature="3982:4035" placeholder="INSERT INTO ORDERS... " />
-            <marker date="1453621263000" expanded="true" signature="4770:4818" placeholder="UPDATE ORDER... " />
-            <marker date="1453621263000" expanded="true" signature="5533:5578" placeholder="SELECT manag... managers" />
-            <marker date="1453621263000" expanded="true" signature="8002:8028" placeholder="SELECT ORDER... ORDERS" />
-            <marker date="1453621263000" expanded="true" signature="8351:9056" placeholder="SELECT ORDER... ORDERS" />
-            <marker date="1453621263000" expanded="true" signature="10255:10280" placeholder="SELECT name managers" />
-            <marker date="1453621263000" expanded="true" signature="11848:11907" placeholder="SELECT CLIEN... ORDERS" />
-            <marker date="1453621263000" expanded="true" signature="14542:14999" placeholder="SELECT WORK.... OPERATIONS" />
-            <marker date="1453621263000" expanded="true" signature="16108:16453" placeholder="SELECT CLIEN... ORDERS" />
+            <marker date="1453642745560" expanded="true" signature="3133:3169" placeholder="DELETE FROM " />
+            <marker date="1453642745560" expanded="true" signature="3982:4035" placeholder="INSERT INTO ORDERS... " />
+            <marker date="1453642745560" expanded="true" signature="4770:4818" placeholder="UPDATE ORDER... " />
+            <marker date="1453642745560" expanded="true" signature="5533:5578" placeholder="SELECT manag... managers" />
+            <marker date="1453642745560" expanded="true" signature="8002:8028" placeholder="SELECT ORDER... ORDERS" />
+            <marker date="1453642745560" expanded="true" signature="8351:9056" placeholder="SELECT ORDER... ORDERS" />
+            <marker date="1453642745560" expanded="true" signature="8351:9061" placeholder="SELECT ORDER... ORDERS" />
+            <marker date="1453642745560" expanded="true" signature="10260:10285" placeholder="SELECT name managers" />
+            <marker date="1453642745560" expanded="true" signature="11853:11912" placeholder="SELECT CLIEN... ORDERS" />
+            <marker date="1453642745560" expanded="true" signature="14547:15004" placeholder="SELECT WORK.... OPERATIONS" />
+            <marker date="1453642745560" expanded="true" signature="14547:15036" placeholder="SELECT WORK.... OPERATIONS" />
+            <marker date="1453642745560" expanded="true" signature="16145:16490" placeholder="SELECT CLIEN... ORDERS" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/CarsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/StaticValues.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2986#2987#0" expanded="false" />
-            <element signature="e#3022#3023#0" expanded="false" />
-            <marker date="1453621404000" expanded="true" signature="1581:1625" placeholder="INSERT INTO cars... " />
-            <marker date="1453621404000" expanded="true" signature="2499:2551" placeholder="SELECT model... cars" />
-            <marker date="1453621404000" expanded="true" signature="3526:3575" placeholder="SELECT mark cars" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/MailSendFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/DataBaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1453622657000" expanded="true" signature="1649:1674" placeholder="SELECT login... account" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WorksListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="349" column="32" selection-start-line="349" selection-start-column="32" selection-end-line="349" selection-end-column="32" />
+          <caret line="361" column="99" selection-start-line="361" selection-start-column="99" selection-end-line="361" selection-end-column="99" />
           <folding>
-            <marker date="1453616634000" expanded="true" signature="3426:3477" placeholder="SELECT carId... cars" />
-            <marker date="1453616634000" expanded="true" signature="3926:3984" placeholder="INSERT INTO work... " />
-            <marker date="1453616634000" expanded="true" signature="4756:4800" placeholder="INSERT INTO cars... " />
-            <marker date="1453616634000" expanded="true" signature="5140:5191" placeholder="SELECT carId... cars" />
-            <marker date="1453616634000" expanded="true" signature="5753:5811" placeholder="INSERT INTO work... " />
-            <marker date="1453616634000" expanded="true" signature="6639:6690" placeholder="SELECT carId... cars" />
-            <marker date="1453616634000" expanded="true" signature="7139:7197" placeholder="INSERT INTO work... " />
-            <marker date="1453616634000" expanded="true" signature="7696:7752" placeholder="SELECT workI... work" />
-            <marker date="1453616634000" expanded="true" signature="8593:8637" placeholder="INSERT INTO cars... " />
-            <marker date="1453616634000" expanded="true" signature="8997:9048" placeholder="SELECT carId... cars" />
-            <marker date="1453616634000" expanded="true" signature="9646:9704" placeholder="INSERT INTO work... " />
-            <marker date="1453616634000" expanded="true" signature="10234:10264" placeholder="SELECT workI... work" />
-            <marker date="1453616634000" expanded="true" signature="11419:11456" placeholder="SELECT model... cars" />
-            <marker date="1453616634000" expanded="true" signature="12433:12466" placeholder="DELETE FROM " />
-            <marker date="1453616634000" expanded="true" signature="13457:13593" placeholder="SELECT work.... work" />
-            <marker date="1453616634000" expanded="true" signature="14245:14294" placeholder="SELECT mark cars" />
+            <marker date="1453644441180" expanded="true" signature="3903:3954" placeholder="SELECT carId... cars" />
+            <marker date="1453644441180" expanded="true" signature="4403:4461" placeholder="INSERT INTO work... " />
+            <marker date="1453644441180" expanded="true" signature="5233:5277" placeholder="INSERT INTO cars... " />
+            <marker date="1453644441180" expanded="true" signature="5617:5668" placeholder="SELECT carId... cars" />
+            <marker date="1453644441180" expanded="true" signature="6230:6288" placeholder="INSERT INTO work... " />
+            <marker date="1453644441180" expanded="true" signature="7116:7167" placeholder="SELECT carId... cars" />
+            <marker date="1453644441180" expanded="true" signature="7616:7674" placeholder="INSERT INTO work... " />
+            <marker date="1453644441180" expanded="true" signature="8173:8229" placeholder="SELECT workI... work" />
+            <marker date="1453644441180" expanded="true" signature="9109:9153" placeholder="INSERT INTO cars... " />
+            <marker date="1453644441180" expanded="true" signature="9513:9564" placeholder="SELECT carId... cars" />
+            <marker date="1453644441180" expanded="true" signature="10162:10220" placeholder="INSERT INTO work... " />
+            <marker date="1453644441180" expanded="true" signature="10750:10780" placeholder="SELECT workI... work" />
+            <marker date="1453644441180" expanded="true" signature="12400:12437" placeholder="SELECT model... cars" />
+            <marker date="1453644441180" expanded="true" signature="13414:13447" placeholder="DELETE FROM " />
+            <marker date="1453644441180" expanded="true" signature="14438:14574" placeholder="SELECT work.... work" />
+            <marker date="1453644441180" expanded="true" signature="15226:15275" placeholder="SELECT mark cars" />
+            <marker date="1453644441180" expanded="true" signature="15754:15855" placeholder="INSERT INTO OPERATIONS... " />
+            <marker date="1453644441180" expanded="true" signature="16858:16959" placeholder="INSERT INTO OPERATIONS... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/WelcomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/works.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41558442">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.28301886">
+          <caret line="6" column="202" selection-start-line="6" selection-start-column="202" selection-end-line="6" selection-end-column="202" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/worksList.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.320755">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/purchaseOrder.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.075472">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientAdd2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2641509">
+          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientCars.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.226415">
+          <caret line="7" column="201" selection-start-line="7" selection-start-column="201" selection-end-line="7" selection-end-column="201" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clients.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6981132">
+          <caret line="6" column="201" selection-start-line="6" selection-start-column="201" selection-end-line="6" selection-end-column="201" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alekseysamoylov/carrepair/PurchaseOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.139535">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+          <folding>
+            <marker date="1453643786090" expanded="true" signature="2641:2684" placeholder="SELECT maste... masters" />
+            <marker date="1453643786090" expanded="true" signature="3784:3828" placeholder="DELETE FROM " />
+            <marker date="1453643786090" expanded="true" signature="4913:4949" placeholder="DELETE FROM " />
+            <marker date="1453643786090" expanded="true" signature="5689:5813" placeholder="UPDATE ORDER... " />
+            <marker date="1453643786090" expanded="true" signature="7932:8377" placeholder="SELECT OPERA... OPERATIONS" />
+            <marker date="1453643786090" expanded="true" signature="7932:8409" placeholder="SELECT OPERA... OPERATIONS" />
+            <marker date="1453643786090" expanded="true" signature="9695:9901" placeholder="SELECT clien... clientscars" />
+            <marker date="1453643786090" expanded="true" signature="11070:11108" placeholder="SELECT name masters" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientsCars2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6795302">
+          <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

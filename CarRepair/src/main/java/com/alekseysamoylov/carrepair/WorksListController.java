@@ -44,6 +44,8 @@ public class WorksListController implements Initializable {
     @FXML private TextField priceManual;
 
 
+    @FXML private ComboBox<Integer> value;
+    private ObservableList<Integer> valuesList = FXCollections.observableArrayList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,50,100);
 
 
     @Override
@@ -63,6 +65,8 @@ public class WorksListController implements Initializable {
         });
         mark.setValue(StaticValues.getMark());
         model.setValue(StaticValues.getModel());
+        value.setItems(valuesList);
+        value.setValue(1);
         if (StaticValues.getMark().equals("ВАЗ")){
             filterField.setText("ВАЗ");
         }
@@ -76,12 +80,19 @@ public class WorksListController implements Initializable {
     }
 
 
+
+
     @FXML
     private void doubleClick() throws IOException {
-        if(!label.getText().equals("Список операций")) {
-            StaticValues.setWorkName(tableView.getSelectionModel().getSelectedItem().getWorkName());
+        if((!label.getText().equals("Список операций"))) {
+//          StaticValues.setWorkName(tableView.getSelectionModel().getSelectedItem().getWorkName());
             StaticValues.setPrice(tableView.getSelectionModel().getSelectedItem().getPrice());
             StaticValues.setWorkId(tableView.getSelectionModel().getSelectedItem().getWorkId());
+            if(priceManual.getText().length() < 1) {
+                saveOperationTable();
+            } else {
+                clickSaveOperation();
+            }
             new StageClose(label);
             new NewStage("/fxml/purchaseOrder.fxml");
         }
@@ -176,6 +187,8 @@ refreshTable();
                 while (getWorksResult.next()) {
                     StaticValues.setWorkId(getWorksResult.getInt(1));
                 }
+
+                clickSaveOperation();
                 new StageClose(label);
                 new NewStage("/fxml/purchaseOrder.fxml");
 
@@ -215,11 +228,19 @@ refreshTable();
                         StaticValues.setWorkId(getWorksResult.getInt(1));
                         StaticValues.setPrice(getWorksResult.getFloat(2));
                     }
+
+                clickSaveOperation();
                 new StageClose(label);
                 new NewStage("/fxml/purchaseOrder.fxml");
 
             } else  if ((workNameManual.getText().length() < 2) && (markManual.getText().length() < 1) && (modelManual.getText().length() < 1) && (priceManual.getText().length() < 1)) {
-                doubleClick();
+                saveOperationTable();
+                new StageClose(label);
+                new NewStage("/fxml/purchaseOrder.fxml");
+            } else  if ((workNameManual.getText().length() < 2) && (markManual.getText().length() < 1) && (modelManual.getText().length() < 1) && (priceManual.getText().length() >= 1)) {
+                clickSaveOperation();
+                new StageClose(label);
+                new NewStage("/fxml/purchaseOrder.fxml");
             } else { label.setText("Wrong!!!"); }
         } catch (NumberFormatException ex) {
             label.setText("Введены некорректные данные в поле цена");
@@ -307,6 +328,48 @@ refreshTable();
         search();
     }
 
+
+
+
+    private void clickSaveOperation() {
+        try{
+            Connection connection = DataBaseConnection.connectionOpen();
+            String sql = "INSERT INTO OPERATIONS (ORDERID, MASTERID, WORKID, PRICE, NUMBERWORK, SUMM) VALUES (?, ?, ?, ?, ?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            System.out.println(StaticValues.getOrderId());
+            preparedStatement.setInt(1, StaticValues.getOrderId());
+            preparedStatement.setInt(2, StaticValues.getMasterId());
+            preparedStatement.setInt(3, tableView.getSelectionModel().getSelectedItem().getWorkId());
+            preparedStatement.setFloat(4, Float.parseFloat(priceManual.getText()));
+            preparedStatement.setInt(5, value.getValue());
+            preparedStatement.setFloat(6, (Float.parseFloat(priceManual.getText())*value.getValue()));
+            preparedStatement.executeUpdate();
+            refreshTable();
+        }catch ( SQLException | ClassNotFoundException ex){
+            ex.printStackTrace();
+            label.setText("Wrong!!!");    }
+
+    }
+
+    private void saveOperationTable(){
+        try{
+            Connection connection = DataBaseConnection.connectionOpen();
+            String sql = "INSERT INTO OPERATIONS (ORDERID, MASTERID, WORKID, PRICE, NUMBERWORK, SUMM) VALUES (?, ?, ?, ?, ?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            System.out.println(StaticValues.getOrderId());
+            preparedStatement.setInt(1, StaticValues.getOrderId());
+            preparedStatement.setInt(2, StaticValues.getMasterId());
+            preparedStatement.setInt(3, tableView.getSelectionModel().getSelectedItem().getWorkId());
+            preparedStatement.setFloat(4, tableView.getSelectionModel().getSelectedItem().getPrice());
+            preparedStatement.setInt(5, value.getValue());
+            preparedStatement.setFloat(6, (tableView.getSelectionModel().getSelectedItem().getPrice()*value.getValue()));
+            preparedStatement.executeUpdate();
+            refreshTable();
+        }catch ( SQLException | ClassNotFoundException ex){
+            ex.printStackTrace();
+            label.setText("Wrong!!!");    }
+    }
+
     private void search(){
         FilteredList<WorksTableClass> filteredData = new FilteredList<>(data, p -> true);
 
@@ -352,6 +415,7 @@ refreshTable();
         }catch (RuntimeException | IOException ex){
             label.setText("Не выбрана операция");
         }
+
     }
 
 }

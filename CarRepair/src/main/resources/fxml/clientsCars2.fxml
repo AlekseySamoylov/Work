@@ -25,7 +25,7 @@
         </TableView>
         <Button layoutX="14.0" layoutY="147.0" mnemonicParsing="false" onAction="#clickDelete" text="Удалить автомобиль" />
         <TextField fx:id="markManual" layoutX="265.0" layoutY="100.0" onKeyTyped="#textClick" onMouseClicked="#textClick" prefHeight="27.0" prefWidth="197.0" promptText="Марка" />
-        <TextField fx:id="modelManual" layoutX="481.0" layoutY="100.0" onAction="#textClick" onKeyTyped="#textClick" onMouseClicked="#textClick" prefHeight="27.0" prefWidth="197.0" promptText="Модель" />
+        <TextField fx:id="modelManual" layoutX="481.0" layoutY="100.0"  prefHeight="27.0" prefWidth="197.0" promptText="Модель" />
         <TextField fx:id="numberManual" layoutX="559.0" layoutY="141.0" prefHeight="27.0" prefWidth="119.0" promptText="А 111 АА" />
         <Label layoutX="20.0" layoutY="105.0" text="Если нет в списках введите вручную" />
         <Label layoutX="343.0" layoutY="38.0" text="Марка" />
