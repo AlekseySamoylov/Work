@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.alekseysamoylov</groupId>
-    <artifactId>carrepair1</artifactId>
-    <version>1.0-BETA</version>
+    <artifactId>carrepair</artifactId>
+    <version>2.0-BETA</version>
     <packaging>jar</packaging>
 
-    <name>carrepair1</name>
+    <name>carrepair</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

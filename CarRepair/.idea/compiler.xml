@@ -24,8 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="CarRepair1" />
       </profile>
+      <profile default="false" name="Annotation profile for CarRepair" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CarRepair" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CarRepair" target="1.8" />
       <module name="CarRepair1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
