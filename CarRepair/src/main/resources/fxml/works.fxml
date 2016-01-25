@@ -39,6 +39,8 @@
                 <Label layoutX="380.0" layoutY="45.0" text="Модель" />
                 <Label layoutX="1121.0" layoutY="79.0" text="Руб." />
             <Button disable="true" layoutX="978.0" layoutY="154.0" mnemonicParsing="false" onAction="#clickDelete" text="Удалить" />
+            <ComboBox fx:id="masterBox" disable="true" layoutX="1059.0" layoutY="112.0" prefHeight="27.0" prefWidth="42.0" visible="false" />
+            <ComboBox fx:id="value" disable="true" layoutX="1003.0" layoutY="112.0" prefHeight="27.0" prefWidth="28.0" visible="false" />
             </children>
         </AnchorPane>
     </children>
