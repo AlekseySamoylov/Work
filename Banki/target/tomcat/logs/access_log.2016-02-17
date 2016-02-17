@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [17/Feb/2016:11:54:51 +0500] "GET /banki HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [17/Feb/2016:11:54:52 +0500] "GET /banki/ HTTP/1.1" 200 1862 http-bio-8080-exec-3 937
+0:0:0:0:0:0:0:1 - - [17/Feb/2016:11:54:56 +0500] "GET /banki/deposit/view? HTTP/1.1" 200 2823 http-bio-8080-exec-4 1949
+0:0:0:0:0:0:0:1 - - [17/Feb/2016:11:55:00 +0500] "GET /banki/deposit/create HTTP/1.1" 200 3859 http-bio-8080-exec-5 2003
+0:0:0:0:0:0:0:1 - - [17/Feb/2016:11:55:10 +0500] "GET /banki/deposit/edit?id=8 HTTP/1.1" 200 2620 http-bio-8080-exec-6 1096

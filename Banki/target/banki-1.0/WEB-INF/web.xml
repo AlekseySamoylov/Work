@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <display-name>Banki</display-name>
+
+    <welcome-file-list>
+        <welcome-file>/views/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>DepositViewServlet</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.DepositViewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DepositViewServlet</servlet-name>
+        <url-pattern>/deposit/view</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DepositCreateServlet</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.DepositCreateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DepositCreateServlet</servlet-name>
+        <url-pattern>/deposit/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DepositEditServlet</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.DepositEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DepositEditServlet</servlet-name>
+        <url-pattern>/deposit/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DepositDeleteServlet</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.DepositDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DepositDeleteServlet</servlet-name>
+        <url-pattern>/deposit/delete</url-pattern>
+    </servlet-mapping>
+
+
+    <!--BANK-->
+    <servlet>
+        <servlet-name>CreateBank</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.BankCreateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateBank</servlet-name>
+        <url-pattern>/bank/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditBank</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.BankEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditBank</servlet-name>
+        <url-pattern>/bank/edit</url-pattern>
+    </servlet-mapping>
+
+
+
+    <!--CLIENT-->
+    <servlet>
+        <servlet-name>CreateClient</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.ClientCreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateClient</servlet-name>
+        <url-pattern>/client/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditClient</servlet-name>
+        <servlet-class>com.alekseysamoylov.banki.servlets.ClientEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditClient</servlet-name>
+        <url-pattern>/client/edit</url-pattern>
+    </servlet-mapping>
+
+</web-app>

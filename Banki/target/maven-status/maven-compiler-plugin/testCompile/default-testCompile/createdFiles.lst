@@ -1,0 +1,5 @@
+com/alekseysamoylov/banki/testsql/CreateClientTest.class
+com/alekseysamoylov/banki/testsql/FirstConnection.class
+com/alekseysamoylov/banki/testsql/DayTimeTest.class
+com/alekseysamoylov/banki/testsql/EditBankTest.class
+com/alekseysamoylov/banki/testsql/GetDepositsTest.class
