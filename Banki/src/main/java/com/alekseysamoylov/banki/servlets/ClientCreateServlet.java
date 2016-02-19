@@ -16,6 +16,7 @@ public class ClientCreateServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         String name = request.getParameter("name");
         String shortName = request.getParameter("shortName");
         String adress = request.getParameter("adress");

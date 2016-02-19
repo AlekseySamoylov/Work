@@ -9,8 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Collection;
-import java.util.Date;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -25,10 +24,12 @@ public class DepositData {
 	}
 
 
-	private final ConcurrentHashMap<Integer, Deposit> deposits = new ConcurrentHashMap<Integer, Deposit>();
+//	private final ConcurrentHashMap<Integer, Deposit> deposits = new ConcurrentHashMap<Integer, Deposit>();
+	private final List<Deposit> depositsList = new ArrayList<>();
 
 
 	public Collection<Deposit> values(){
+		depositsList.clear();
 		try(Connection connection = ConnectionJdbc.getConnection()){
 			String sql = "SELECT DEPOSITS.DEPOSITID, BANKCLIENTS.BANKCLIENTID, BANKS.BANKID, " +
 					"BANKCLIENTS.SHORTNAME, " +
@@ -38,20 +39,29 @@ public class DepositData {
 					"JOIN BANKS " +
 					"ON DEPOSITS.BANKID = BANKS.BANKID " +
 					"JOIN BANKCLIENTS " +
-					"ON DEPOSITS.CLIENTID = BANKCLIENTS.BANKCLIENTID";
+					"ON DEPOSITS.CLIENTID = BANKCLIENTS.BANKCLIENTID " +
+					"ORDER BY DEPOSITS.DATETIME";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			while (resultSet.next()){
-				deposits.put(resultSet.getInt(1), new Deposit(resultSet.getInt(1),
+				SimpleDateFormat formatter2 = new SimpleDateFormat("yyyy-MM-dd");
+//				deposits.put(resultSet.getInt(1), new Deposit(resultSet.getInt(1),
+//						resultSet.getInt(2), resultSet.getInt(3),
+//						resultSet.getString(4), resultSet.getString(5),
+//						formatter2.format(resultSet.getDate(6)), resultSet.getInt(7),
+//						resultSet.getInt(8)));
+				depositsList.add(new Deposit(resultSet.getInt(1),
 						resultSet.getInt(2), resultSet.getInt(3),
 						resultSet.getString(4), resultSet.getString(5),
-						resultSet.getDate(6).toString(), resultSet.getInt(7),
+						formatter2.format(resultSet.getDate(6)), resultSet.getInt(7),
 						resultSet.getInt(8)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return this.deposits.values();
+//		return this.deposits.values();
+		return this.depositsList;
+
 	}
 
 	public Deposit getDeposit(int id){
@@ -71,8 +81,9 @@ public class DepositData {
 			preparedStatement.setInt(1,id);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			while (resultSet.next()){
+				SimpleDateFormat formatter2 = new SimpleDateFormat("yyyy-MM-dd");
 				deposit = new Deposit(id, resultSet.getInt(1), resultSet.getInt(2), resultSet.getString(3), resultSet.getString(4),
-						resultSet.getString(5),resultSet.getInt(6), resultSet.getInt(7));
+						formatter2.format(resultSet.getDate(5)), resultSet.getInt(6), resultSet.getInt(7));
 			}
 
 		} catch (SQLException e) {
@@ -82,7 +93,7 @@ public class DepositData {
 	}
 
 	public void editDeposit(int id, String dateTime, String percent, String time){
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.S");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		SimpleDateFormat formatter2 = new SimpleDateFormat("dd-MMM-yyyy");
 		try(Connection connection = ConnectionJdbc.getConnection()){
 			Date date = formatter.parse(dateTime);
@@ -101,7 +112,7 @@ public class DepositData {
 
 
 	public void createDeposit(int clientId, int bankId, String dateTime, int percent, int time){
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.S");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		SimpleDateFormat formatter2 = new SimpleDateFormat("dd-MMM-yyyy");
 		try(Connection connection = ConnectionJdbc.getConnection()){
 			Date date = formatter.parse(dateTime);
@@ -120,18 +131,18 @@ public class DepositData {
 	}
 
 
-	public void add(final Deposit deposit){
-		this.deposits.put(deposit.getDepositId(), deposit);
-	}
-	public void edit(final Deposit deposit){
-		this.deposits.replace(deposit.getDepositId(), deposit);
-	}
-	public void delete(final int id){
-		this.deposits.remove(id);
-	}
-	public Deposit get(final int id){
-		return this.deposits.get(id);
-	}
+//	public void add(final Deposit deposit){
+//		this.deposits.put(deposit.getDepositId(), deposit);
+//	}
+//	public void edit(final Deposit deposit){
+//		this.deposits.replace(deposit.getDepositId(), deposit);
+//	}
+//	public void delete(final int id){
+//		this.deposits.remove(id);
+//	}
+//	public Deposit get(final int id){
+//		return this.deposits.get(id);
+//	}
 
 
 }

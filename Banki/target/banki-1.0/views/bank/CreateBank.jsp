@@ -7,9 +7,10 @@
 --%>
 <%@ page language="java" pageEncoding="UTF-8" session="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<html lang="ru">
 <head>
     <title>Запись Банка</title>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
 </head>
 <body>
 <form action="${pageContext.servletContext.contextPath}/bank/create" method="POST">

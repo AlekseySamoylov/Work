@@ -3,7 +3,6 @@ package com.alekseysamoylov.banki.servlets;
 import com.alekseysamoylov.banki.Store.DepositData;
 import com.alekseysamoylov.banki.models.BigClass;
 import com.alekseysamoylov.banki.models.Deposit;
-import com.alekseysamoylov.banki.service.StaticValues;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

@@ -8,6 +8,9 @@ public class Bank {
     private String name;
     private int bik;
 
+    public Bank(){
+    }
+
     public Bank(int bankId, String name, int bik) {
         this.bankId = bankId;
         this.name = name;

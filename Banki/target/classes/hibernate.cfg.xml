@@ -1,0 +1,25 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<!DOCTYPE hibernate-configuration SYSTEM-->
+        <!--"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">-->
+
+<!--&lt;!&ndash;<hibernate-configuration>&ndash;&gt;-->
+    <!--&lt;!&ndash;<session-factory>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.connection.driver_class">com.oracle.</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.connection.url">jdbc:postgresql://127.0.0.1:5432/java-lesson</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.connection.username">postgres</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.connection.password">password</property>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.c3p0.min_size">7</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.c3p0.max_size">53</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.c3p0.timeout">100</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.c3p0.max_statements">50</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.c3p0.idle_test_period">1000</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.c3p0.validate">true</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="hibernate.connection.provider_class">org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider</property>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;&lt;!&ndash; List of XML mapping files &ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<mapping resource="ru/parsentev/models/User.hbm.xml"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</session-factory>&ndash;&gt;-->
+<!--&lt;!&ndash;</hibernate-configuration>&ndash;&gt;-->

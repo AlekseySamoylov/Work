@@ -1,4 +1,4 @@
-com/alekseysamoylov/banki/service/StaticValues.class
+com/alekseysamoylov/banki/servlets/BankDeleteServlet.class
 com/alekseysamoylov/banki/models/Client.class
 com/alekseysamoylov/banki/models/Deposit.class
 com/alekseysamoylov/banki/Store/BankData.class

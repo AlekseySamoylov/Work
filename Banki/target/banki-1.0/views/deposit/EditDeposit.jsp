@@ -7,13 +7,14 @@
 --%>
 <%@ page language="java" pageEncoding="UTF-8" session="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<html lang="ru">
 <head>
     <title>Title</title>
+    <meta charset="UTF-8">
 </head>
 <body>
 
-<form action="${pageContext.servletContext.contextPath}/deposit/edit" method="POST">
+<form action="${pageContext.servletContext.contextPath}/deposit/edit" method="POST" oninput="amount.value=rangeInput.value">
     <input type="hidden" name="id" value="${bigClass.deposit.depositId}">
 
     <table>
@@ -29,13 +30,18 @@
         <tr>
             <td align="right" >Дата открытия : </td>
             <td>
-                <input type="text" name="dateTime" value="${bigClass.deposit.dateTime}">
+                <input type="date" name="dateTime" value="${bigClass.deposit.dateTime}">
             </td>
         </tr>
         <tr>
             <td align="right" >Процент : </td>
             <td>
-                <input type="text" name="percent" value="${bigClass.deposit.percent}">
+                <%--<input type="text" name="percent" value="${bigClass.deposit.percent}">--%>
+                <div>
+                    <input type="range" id="rangeInput" name="percent" min="0" max="100" value="${bigClass.deposit.percent}">
+                    <output name="amount" for="rangeInput">${bigClass.deposit.percent}</output>%
+                </div>
+
             </td>
         </tr>
         <tr>

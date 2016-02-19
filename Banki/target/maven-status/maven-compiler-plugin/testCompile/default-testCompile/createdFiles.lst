@@ -1,3 +1,4 @@
+com/alekseysamoylov/banki/servlets/BankCRUDServletTest.class
 com/alekseysamoylov/banki/testsql/CreateClientTest.class
 com/alekseysamoylov/banki/testsql/FirstConnection.class
 com/alekseysamoylov/banki/testsql/DayTimeTest.class

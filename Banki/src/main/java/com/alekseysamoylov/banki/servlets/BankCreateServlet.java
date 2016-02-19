@@ -16,6 +16,7 @@ public class BankCreateServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        request.setCharacterEncoding("utf-8");
         String bankName = request.getParameter("bankName");
         String bik = request.getParameter("bik");
         new BankData().createBank(bankName, bik);

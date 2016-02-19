@@ -4,10 +4,10 @@
     <title>Bank</title>
 </head>
 <body>
-<h1 align="center">Пишите на английском.<br> (проблема в моем сервере, а не в приложении) <br> Все сделал за один день. <br> Дизайн отсутствует.</h1>
+<h1 align="center">Все исправил за вечер второго дня.<br> Enjoy yourself!!! <br> Все сделал за один день. <br> Дизайн отсутствует.</h1>
 <div align="center">
     <form action="deposit/view" method='get'>
-        <input type='submit' value='Enter to Bank' style="font-size: x-large; color: chartreuse; background-color: crimson" />
+        <input type='submit' value='Enter to the Bank' style="font-size: x-large; color: crimson; background-color: cyan" />
     </form>
 </div>
 <br />

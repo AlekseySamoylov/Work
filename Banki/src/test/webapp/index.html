@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <tr>
+            <td>
+                <input type="date" value="2014-11-02">
+            </td>
+        </tr>
+    </table>
+</div>
+<form oninput="amount.value=rangeInput.value">
+    <input type="range" id="rangeInput" name="rangeInput" min="0" max="100" value="5">
+    <output name="amount" for="rangeInput">5</output>
+</form>
+</body>
+</html>

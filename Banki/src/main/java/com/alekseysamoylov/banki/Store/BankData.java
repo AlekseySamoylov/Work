@@ -2,7 +2,6 @@ package com.alekseysamoylov.banki.Store;
 
 import com.alekseysamoylov.banki.models.Bank;
 import com.alekseysamoylov.banki.service.ConnectionJdbc;
-import com.alekseysamoylov.banki.service.StaticValues;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -7,9 +7,10 @@
 --%>
 <%@ page language="java" pageEncoding="UTF-8" session="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<html lang="ru">
 <head>
     <title>Изменение данных Банка</title>
+    <meta charset="UTF-8">
 </head>
 <body>
 <form action="${pageContext.servletContext.contextPath}/client/edit" method="POST">

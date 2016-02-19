@@ -73,9 +73,9 @@ public class Deposit {
         return dateTime;
     }
 
-    public void setDateTime(String dateTime) {
-        this.dateTime = dateTime;
-    }
+    public void setDateTime(String dateTime){
+
+        this.dateTime = dateTime;    }
 
     public int getPercent() {
         return percent;

@@ -5,7 +5,6 @@ import com.alekseysamoylov.banki.Store.DepositData;
 import com.alekseysamoylov.banki.models.Bank;
 import com.alekseysamoylov.banki.models.Client;
 import com.alekseysamoylov.banki.service.ConnectionJdbc;
-import com.alekseysamoylov.banki.service.StaticValues;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,7 +23,6 @@ public class BankEditServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Bank bank = new BankData().getBank(Integer.parseInt(req.getParameter("id")));
-        StaticValues.setBankId(Integer.parseInt(req.getParameter("id")));
         req.setAttribute("bank", bank);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/views/bank/EditBank.jsp");
         dispatcher.forward(req, resp);
@@ -32,7 +30,8 @@ public class BankEditServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       new BankData().editBank(StaticValues.getBankId(), req.getParameter("bankName"), Integer.valueOf(req.getParameter("bik")));
+       req.setCharacterEncoding("utf-8");
+       new BankData().editBank(Integer.parseInt(req.getParameter("id")), req.getParameter("bankName"), Integer.valueOf(req.getParameter("bik")));
         resp.sendRedirect(String.format("%s%s", req.getContextPath(), "/deposit/view"));
     }
 }

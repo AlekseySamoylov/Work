@@ -7,16 +7,17 @@
 --%>
 <%@ page language="java" pageEncoding="UTF-8" session="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<html lang="ru">
 <head>
     <title></title>
+    <meta charset="UTF-8">
 </head>
 <body>
 <h2>
 <a href="${pageContext.servletContext.contextPath}/views/bank/CreateBank.jsp">Добавить банк</a>
 <a href="${pageContext.servletContext.contextPath}/views/client/CreateClient.jsp">Добавить клиента</a>
 </h2>
-<form action="${pageContext.servletContext.contextPath}/deposit/create" method="POST">
+<form action="${pageContext.servletContext.contextPath}/deposit/create" method="POST" oninput="amount.value=rangeInput.value">
 
     <h2>Клиенты:</h2>
     <table border="1">
@@ -62,13 +63,17 @@
         <tr>
             <td align="right" >Дата открытия : </td>
             <td>
-                <input type="text" name="dateTime" value="2015-01-10 00:00:00.0">
+                <input type="date" name="dateTime" value="2016-01-02">
             </td>
         </tr>
         <tr>
             <td align="right" >Процент : </td>
             <td>
-                <input type="text" name="percent" value="10">
+                <%--<input type="text" name="percent" value="10">--%>
+                    <div>
+                        <input type="range" id="rangeInput" name="percent" min="0" max="100" value="15">
+                        <output name="amount" for="rangeInput">15</output>%
+                    </div>
             </td>
         </tr>
         <tr>

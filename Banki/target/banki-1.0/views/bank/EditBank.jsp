@@ -5,11 +5,13 @@
   Time: 9:58 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" pageEncoding="UTF-8" session="true"%>
+<%@ page language="java" pageEncoding="UTF-8" session="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+
+<html lang="ru">
 <head>
     <title>Изменение данных Банка</title>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
 </head>
 <body>
 <form action="${pageContext.servletContext.contextPath}/bank/edit" method="POST">
