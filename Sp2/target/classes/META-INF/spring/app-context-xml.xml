@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="beanA" class="com.alekseysamoylov.sp3.BeanA" depends-on="beanB"/>
+    <bean id="beanB" class="com.alekseysamoylov.sp3.BeanB" />
+
+    <bean id="nonSingleton" class="java.lang.String"
+          scope="prototype"
+          c:_0="Hello!!!"/>
+
+
+    <bean id="methodReplacer" class="com.alekseysamoylov.sp3.FormatMessageReplacer"/>
+
+    <bean id="replacementTarget" class="com.alekseysamoylov.sp3.ReplacementTarget">
+        <replaced-method name="formatMessage" replacer="methodReplacer">
+            <arg-type>String</arg-type>
+        </replaced-method>
+    </bean>
+
+    <bean id="standardTarget" class="com.alekseysamoylov.sp3.ReplacementTarget"/>
+
+
+
+    <bean id="helper" class="com.alekseysamoylov.sp3.MyHelper" scope="prototype"/>
+
+    <bean id="abstractLookupBean" class="com.alekseysamoylov.sp3.AbstractLookupDemoBean">
+        <lookup-method name="getMyHelper" bean="helper"/>
+    </bean>
+
+    <bean id="standardLookupBean" class="com.alekseysamoylov.sp3.StandardLookupDemoBean">
+        <property name="myHelper">
+            <ref bean="helper"/>
+        </property>
+    </bean>
+
+
+
+
+
+    <!--<bean id="hierarchic" class="com.alekseysamoylov.sp3.SimpleTarget" p:val-ref="childEntry"/>-->
+
+    <!--<bean id="hierarchic3" class="com.alekseysamoylov.sp3.SimpleTarget">-->
+        <!--<property name="val">-->
+            <!--<ref parent="injectBean"/>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="hierarchic2" class="com.alekseysamoylov.sp3.SimpleTarget" p:val-ref="injectParentBean"/>-->
+
+    <!--<bean id="childEntry" class="java.lang.String" c:_0="Hello Child"/>-->
+
+</beans>

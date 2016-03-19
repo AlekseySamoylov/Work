@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="parentInherit" class="com.alekseysamoylov.sp3.xml.SimpleBean"
+          p:name="Maria" p:age="30"/>
+    <bean id="childInherit" class="com.alekseysamoylov.sp3.xml.SimpleBean"
+          parent="parentInherit" p:age="31"/>
+
+
+
+
+    <bean id="foo" class="com.alekseysamoylov.sp3.Foo"/>
+    <bean id="bar" class="com.alekseysamoylov.sp3.Bar"/>
+
+    <bean id="targetByType" autowire="byType" class="com.alekseysamoylov.sp3.xml.Target" lazy-init="true"/>
+
+    <bean id="targetByName" autowire="byName" class="com.alekseysamoylov.sp3.xml.Target" lazy-init="true"/>
+
+    <bean id="targetConstructor" autowire="constructor" class="com.alekseysamoylov.sp3.xml.Target" lazy-init="true"/>
+
+
+</beans>

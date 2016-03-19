@@ -1,0 +1,8 @@
+com/alekseysamoylov/sp2/HelloWorldDecoupled.class
+com/alekseysamoylov/sp2/MessageRenderer.class
+com/alekseysamoylov/sp2/HelloWorldMessageProvider.class
+com/alekseysamoylov/sp2/HelloWorldSpringDI.class
+com/alekseysamoylov/sp2/MessageSupportFactory.class
+com/alekseysamoylov/sp2/StandardOutMessageRenderer.class
+com/alekseysamoylov/sp2/HelloWorldDecoupledWithFactory.class
+com/alekseysamoylov/sp2/MessageProvider.class
